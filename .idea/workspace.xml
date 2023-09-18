@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="186ff31e-76ea-434b-97f1-879fcd2b1ebc" name="Changes" comment="V2- Get APIs added" />
+    <list default="true" id="186ff31e-76ea-434b-97f1-879fcd2b1ebc" name="Changes" comment="V2- Get APIs added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/controller/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/controller/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/entity/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daiwa/assignment/service/RecordService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -43,7 +49,7 @@
       <recent name="D:\Aniket\Projects\DaiwaAssignment\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RecodServiceTest">
     <configuration name="RecordApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.DaiwaApplication" />
       <module name="DaiwaAssignment" />
@@ -51,6 +57,94 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecodServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DaiwaAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daiwa.assignment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daiwa.assignment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.service.RecodServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecodServiceTest._test_add_duplicateNameException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DaiwaAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daiwa.assignment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daiwa.assignment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.service.RecodServiceTest" />
+      <option name="METHOD_NAME" value="_test_add_duplicateNameException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecodServiceTest._test_add_nameGenrePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DaiwaAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daiwa.assignment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daiwa.assignment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.service.RecodServiceTest" />
+      <option name="METHOD_NAME" value="_test_add_nameGenrePrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecodServiceTest._test_getById_invalidId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DaiwaAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daiwa.assignment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daiwa.assignment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.service.RecodServiceTest" />
+      <option name="METHOD_NAME" value="_test_getById_invalidId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecodServiceTest._test_getById_validId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DaiwaAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daiwa.assignment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daiwa.assignment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.daiwa.assignment.service.RecodServiceTest" />
+      <option name="METHOD_NAME" value="_test_getById_validId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RecodServiceTest" />
+        <item itemvalue="JUnit.RecodServiceTest._test_getById_invalidId" />
+        <item itemvalue="JUnit.RecodServiceTest._test_getById_validId" />
+        <item itemvalue="JUnit.RecodServiceTest._test_add_duplicateNameException" />
+        <item itemvalue="JUnit.RecodServiceTest._test_add_nameGenrePrice" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695055160782</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="V2- Get APIs added">
+      <created>1695055626667</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695055626667</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +201,16 @@
     <MESSAGE value="V1- Initial commit" />
     <MESSAGE value="V2- Get APIs added" />
     <option name="LAST_COMMIT_MESSAGE" value="V2- Get APIs added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/daiwa/assignment/service/RecodServiceTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

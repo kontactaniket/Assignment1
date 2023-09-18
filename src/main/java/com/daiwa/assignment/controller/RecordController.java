@@ -1,6 +1,7 @@
 package com.daiwa.assignment.controller;
 
 import com.daiwa.assignment.dto.RecordDTO;
+import com.daiwa.assignment.exception.RecordException;
 import com.daiwa.assignment.service.RecordService;
 import lombok.AllArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -29,6 +30,9 @@ public class RecordController {
             return ResponseEntity.badRequest().body(
                     buildRecordDto(null, name, genre, price, null, DUPLICATE_NAME_ERROR));
         } catch (IllegalArgumentException ex) {
+            return ResponseEntity.badRequest().body(
+                    buildRecordDto(null, name, genre, price, null, ex.getMessage()));
+        } catch (RecordException ex) {
             return ResponseEntity.badRequest().body(
                     buildRecordDto(null, name, genre, price, null, ex.getMessage()));
         } catch (RuntimeException ex) {

@@ -3,6 +3,7 @@ package com.daiwa.assignment.service;
 import com.daiwa.assignment.dto.RecordDTO;
 import com.daiwa.assignment.entity.Genre;
 import com.daiwa.assignment.entity.Record;
+import com.daiwa.assignment.exception.RecordException;
 import com.daiwa.assignment.repository.RecordsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -25,26 +26,28 @@ public class RecordService {
             record = buildRecordEntity(name, genre, price);
         } catch (RuntimeException ex) {
             //LOG
-            throw ex;
+            throw RecordException.builder().message(ex.getMessage()).build();
         }
         try {
             return buildRecordDto(repository.save(record));
         } catch (DataIntegrityViolationException ex) {
             //LOG
-            throw ex;
+            throw RecordException.builder().message(ex.getMessage()).build();
         } catch (IllegalArgumentException ex) {
             //LOG
-            throw ex;
+            throw RecordException.builder().message(ex.getMessage()).build();
         }
     }
 
-    public RecordDTO getById(Integer id) throws RuntimeException {
+    public RecordDTO getById(Integer id) throws RecordException {
         Optional<Record> result = repository.findById(id);
         Record record = result.orElseThrow(
                 ()->{
                     //LOG
-                    return new RuntimeException(String.format(
-                            "No record found with id: %S", id));
+                    return RecordException.builder()
+                            .message(String.format(
+                                    "No record found with id: %S", id))
+                            .build();
                 });
         return buildRecordDto(record);
     }

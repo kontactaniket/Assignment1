@@ -25,4 +25,15 @@ public class Record {
     private Float price;
     @Column(name = "GENRE")
     private Genre genre;
+
+    @Override
+    public Object clone() {
+        return Record.builder()
+                .id(this.getId())
+                .name(this.getName())
+                .genre(this.getGenre())
+                .created(this.getCreated())
+                .price(this.getPrice())
+                .build();
+    }
 }
