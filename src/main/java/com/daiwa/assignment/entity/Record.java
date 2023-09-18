@@ -1,13 +1,16 @@
 package com.daiwa.assignment.entity;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Data
 @Builder
+@Setter@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "RECORD")
 public class Record {
     @Id
